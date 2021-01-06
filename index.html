@@ -7,6 +7,7 @@
     <title>Esthete Custom - Site en construction</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
     html,
     body,
     div,
@@ -142,10 +143,23 @@
         background-color: #000000;
         background-image: url('./SBP3668.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'EB Garamond', serif;
+    }
 
+    h1 {
+        color: white;
+        font-family: 'EB Garamond', serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
     }
 
     p {
+        color: white;
+        text-align: center;
+    }
+    div>a {
         color: white;
         text-align: center;
     }
@@ -158,15 +172,28 @@
         width: 130px;
         height: auto;
     }
+    footer{
+        position:absolute;
+        bottom: 30px;
+        width: 100%;
+        align-content: center;
+    }
 </style>
 
 <body>
     <header>
         <div><img src="./logo-Esthete.png" /></div>
     </header>
-    <div>
-
+    <div class="">
+        <h1>bientôt en ligne</h1>
+        <p>Disponible prochainement</p>
     </div>
+            <!--<div>
+                <a>Me prévenir</a>
+            </div>-->
+    <footer>
+        <p>@2020 esthete custom</p>
+    </footer>
 </body>
 
 </html>
