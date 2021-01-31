@@ -76,7 +76,7 @@ label[for=toogle]{
 }
 
 #toogle:checked ~ #volet{
-  top: -100%;
+  top: -150%;
 }
 
 .icon-scroll,
