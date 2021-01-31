@@ -30,36 +30,22 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="./assets/dist/css/cover.css" rel="stylesheet">
     <link href="./assets/dist/css/carousel.css" rel="stylesheet">
     <link href="./assets/dist/css/bootstrap-utilities.css" rel="stylesheet">
 </head>
 
-<body class="text-center vw-100 vh-100 bg-dark">
+<body class="text-center vw-100 vh-100">
+    <main class="vw-100 vh-100">
+        <input type="checkbox" name="toogle" id="toogle" />
+        <div class="bg-dark" id="volet">
+            <!--HEADER-->
+            <header style="z-index:3" class="position-absolute p-5">
+                <img src="./assets/img/logo-Esthete.png" class="float-md-start mb-0 w-10" />
+            </header>
+            <!--HEADER-->
 
-    <div class="cover-container-fluid d-flex vw-100 vh-100 mx-auto flex-column">
-        <!--<header class="position-relative">
-            <div>
-                <img src="./assets/img/logo-Esthete.png" class="float-md-start mb-0 w-10"/>
-            </div>
-        </header>-->
-
-        <main class="vw-100 vh-100">
             <!--CAROUSEL-->
             <div id="myCarousel" class="vw-100 vh-100 carousel slide carousel-fade" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="7"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="8"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="9"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="10"></li>
-                </ol>
                 <div class="vw-100 vh-100 carousel-inner">
                     <div class="carousel-item active">
                         <picture>
@@ -128,18 +114,19 @@
                         </picture>
                     </div>
                 </div>
-                <!--<a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>-->
             </div>
-            <!--CAROUSEL-->
-        </main>
-    </div>
+            <div class='icon-scroll'><label for="toogle"><span>cliquez ici</span></label></div>
+        </div>
+        <!--CAROUSEL-->
+
+        <!--SITE WEB-->
+        <div class="text-center vw-100 vh-100 bg-white">
+            <header class="position-absolute p-5">
+                <img src="./assets/img/logo-Esthete-black.png" class="float-md-start mb-0 w-50" />
+            </header>
+        </div>
+        <!--SITE WEB-->
+    </main>
 
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
