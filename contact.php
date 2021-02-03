@@ -21,6 +21,12 @@ $sendToName = 'Demo contact form';
 // subject of the email
 $subject = 'New message from contact form';
 
+// smtp credentials and server
+
+$smtpHost = 'smtp.gmail.com';
+$smtpUsername = 'larrouturoumaxime@gmail.com';
+$smtpPassword = 'Codmax7592220!';
+
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
