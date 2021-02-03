@@ -1,0 +1,35 @@
+
+jQuery(document).ready(function() {
+	
+    
+    /*
+	    Contact form
+	*/
+	$('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
+		$('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
+	});
+	$('.contact-form form').submit(function(e) {
+		e.preventDefault();
+	    $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
+	    var postdata = $('.contact-form form').serialize();
+	    $.ajax({
+	        type: 'POST',
+	        url: 'assets/contact.php',
+	        data: postdata,
+	        dataType: 'json',
+	        success: function(json) {
+	            if(json.emailMessage != '') {
+	                $('.contact-form form .contact-email').addClass('input-error');
+	            }
+	            if(json.subjectMessage != '') {
+	                $('.contact-form form .contact-subject').addClass('input-error');
+	            }
+	            if(json.messageMessage != '') {
+	                $('.contact-form form textarea').addClass('input-error');
+	            }
+	        }
+	    });
+	});
+    
+    
+});
