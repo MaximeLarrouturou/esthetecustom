@@ -13,6 +13,7 @@
     <link href="./assets/dist/css/bootstrap-utilities.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/dist/css/animate.css" rel="stylesheet">
 
 </head>
 
@@ -21,7 +22,7 @@
         <!--SITE WEB-->
 
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light mt-md-3 mb-md-5">
+            <nav class="navbar navbar-expand-lg navbar-light mt-md-3 mb-md-5 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                 <div class="container-fluid px-md-0">
                     <img src="./assets/img/logo-Esthete-black.png" class="float-md-start mb-0 w-10 imgResponsive" />
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,13 +47,12 @@
                     </div>
                 </div>
             </nav>
-            <div class="row">
+            <div style="margin-top:10%" class="row">
                 <div class="col-sm-2"></div>
-                <div class="col-sm-6 text-start">
-                    <h1>Contact form Tutorial from</h1>
+                <div class="col-sm-8 text-start wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <h1>Contacter moi</h1>
 
-                    <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form
-                        with PHP and AJAX background.</p>
+                    <p class="lead">...</p>
 
                     <form id="contact-form" method="post" action="contact.php" role="form">
 
@@ -61,57 +61,57 @@
                         <div class="controls">
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 my-3">
                                     <div class="form-group">
-                                        <label class="form-label" for="form_name">Firstname *</label>
+                                        <label class="form-label" for="form_name">Prénom *</label>
                                         <input id="form_name" type="text" name="name" class="form-control"
-                                            placeholder="Please enter your firstname *" required="required"
+                                            placeholder="" required="required"
                                             data-error="Firstname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 my-3">
                                     <div class="form-group">
-                                        <label class="form-label" for="form_lastname">Lastname *</label>
+                                        <label class="form-label" for="form_lastname">Nom *</label>
                                         <input id="form_lastname" type="text" name="surname" class="form-control"
-                                            placeholder="Please enter your lastname *" required="required"
+                                            placeholder="" required="required"
                                             data-error="Lastname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 my-3">
                                     <div class="form-group">
                                         <label class="form-label" for="form_email">Email *</label>
                                         <input id="form_email" type="email" name="email" class="form-control"
-                                            placeholder="Please enter your email *" required="required"
+                                            placeholder="" required="required"
                                             data-error="Valid email is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 my-3">
                                     <div class="form-group">
-                                        <label class="form-label" for="form_phone">Phone</label>
+                                        <label class="form-label" for="form_phone">Téléphone (facultatif)</label>
                                         <input id="form_phone" type="tel" name="phone" class="form-control"
-                                            placeholder="Please enter your phone">
+                                            placeholder="">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 my-3">
                                     <div class="form-group">
                                         <label class="form-label" for="form_message">Message *</label>
                                         <textarea id="form_message" name="message" class="form-control"
-                                            placeholder="Message for me *" rows="4" required="required"
+                                            placeholder="" rows="4" required="required"
                                             data-error="Please, leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="form-control btn btn-success btn-send"
-                                        value="Send message">
+                                <div class="col-md-4 my-3">
+                                    <input type="submit" class="form-control btn btn-secondary  btn-send"
+                                        value="Envoyer">
                                 </div>
                             </div>
                         </div>
@@ -124,6 +124,7 @@
         <!--SITE WEB-->
     </main>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dist/js/wow.js"></script>
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
