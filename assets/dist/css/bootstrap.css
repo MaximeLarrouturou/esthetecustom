@@ -90,7 +90,14 @@ margin-bottom: 20px;
 color: #ff5050;
 margin-top: 5px;
 }
-
+.whiteBlock{
+  background: #ffffff;
+  width: 94%;
+height: 57px;
+bottom: 0;
+z-index: 999999;
+position: fixed;
+}
 @media (max-width: 500px) {
   .imgResponsive{
     width: 25%!important;
@@ -99,6 +106,10 @@ margin-top: 5px;
   .navbar-nav {
 
     padding-left: 0!important;
+}
+
+.whiteBlock{
+  width: 100%;
 }
 }
 
@@ -271,7 +282,7 @@ margin-top: 5px;
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
+  z-index: 9999999999999999999999999;
   font-size: 18px;
   border: none;
   outline: none;
