@@ -67,7 +67,7 @@ label[for=toogle]{
 }
 #volet{
   position: fixed;
-  z-index:2;
+  z-index:99999999999999;
   top: 0;
   left: 0;
   height: 100%;
@@ -104,7 +104,7 @@ label[for=toogle]{
 .carousel-item {
   height: 32rem;
 }
-.carousel-item > img {
+.carousel-item > picture {
   position: absolute;
   top: 0;
   left: 0;
@@ -161,10 +161,20 @@ label[for=toogle]{
   .featurette-heading {
     font-size: 50px;
   }
+
+ 
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-item{
+    width:270%;
+    height: unset;
+    right:360px;
   }
 }
