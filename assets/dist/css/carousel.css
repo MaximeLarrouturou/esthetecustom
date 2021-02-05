@@ -196,7 +196,7 @@ label[for=toogle]{
 
 @media (max-width: 500px) {
   .carousel-item{
-    width:270%;
+    width:160vh;
     height: unset;
     right:360px;
   }
