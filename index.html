@@ -26,11 +26,6 @@
     <main>
         <input type="checkbox" name="toogle" id="toogle" />
         <div class="bg-dark" id="volet">
-            <!--HEADER-->
-            <header style="z-index:3" class="position-absolute p-5 vw-100">
-                <img src="./assets/img/logo-Esthete.png" class="float-md-start mb-0 w-10 imgResponsive" />
-            </header>
-            <!--HEADER-->
 
             <!--CAROUSEL-->
             <div id="myCarousel" class="vw-100 vh-100 carousel slide carousel-fade" data-bs-ride="carousel">
@@ -104,9 +99,15 @@
                 </div>
             </div>
             <div id="section05" class='icon-scroll'>
-                <button type="button" class="btn btn-light">Accéder au site </button>
+                <img class="logoCarousel wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    src="./assets/img/logo-Esthete.png" />
+                <div class="lineWhite wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s"></div>
+                <h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">Atelier de maroquinnerie sur
+                    mesure</h1>
+                <div class="lineWhite wow fadeInDown" data-wow-duration="1s"
+                    data-wow-delay="0.7s"></div>
+                <button type="button" class="btn btn-light wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Accéder au site </button>
                 <label for="toogle">
-                    <span></span>
                 </label>
             </div>
         </div>
@@ -116,8 +117,7 @@
 
 
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light mt-md-3 mb-md-5 wow fadeInDown" data-wow-duration="1s"
-                data-wow-delay="0.2s">
+            <nav class="navbar navbar-expand-lg navbar-light mt-md-3 mb-md-5">
                 <div class="container-fluid px-md-0">
                     <a class="logo" href="./galerie.html"><img src="./assets/img/logo-Esthete-black.png" class="float-md-start mb-0 w-60 imgResponsive" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

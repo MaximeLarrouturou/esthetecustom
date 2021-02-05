@@ -7,9 +7,38 @@ body {
   padding-bottom: 3rem;*/
   color: #ffffff;
 }
+h1{
+  color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.lineWhite{
+  width: 40%;
+    height: 1px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+.logoCarousel{
+  width:15%;
+  margin-bottom:30px;
+}
+.btn{
+  padding: 0.7rem 1.75rem;
+    border-radius: 0;
+    left: 45%;
+    bottom: 25%;
+    position: absolute;
+}
+.btn-light {
+  color: #fff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
 #section05 {
-  padding-top: 70px;
   width:100%;
+  height: 100%;
 }
 #section05 span {
   position: absolute;
@@ -26,32 +55,7 @@ body {
   animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
-@-webkit-keyframes sdb05 {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb05 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -85,7 +89,7 @@ label[for=toogle]{
   position: absolute;
 }
 .icon-scroll {
-  top: 80%;
+  top: 20%;
 }
 
 /*********************************************/
@@ -177,4 +181,16 @@ label[for=toogle]{
     height: unset;
     right:360px;
   }
+  .btn{
+    left:30%;
+  }
+  .logoCarousel{
+    width:40%;
+  }
+  h1{
+    font-size:35px;
+  }
+  .lineWhite {
+    width: 88%;
+}
 }
