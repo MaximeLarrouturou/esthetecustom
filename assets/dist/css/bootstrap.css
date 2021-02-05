@@ -74,6 +74,14 @@
   color: white;
 }
 
+.imgPropos{
+  height:60vh!important;
+}
+
+.marginPropos{
+  margin-top: 12vh!important;
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
       font-size: 3.5rem;
@@ -99,14 +107,7 @@ margin-bottom: 20px;
 color: #ff5050;
 margin-top: 5px;
 }
-.whiteBlock{
-  background: #ffffff;
-  width: 94%;
-height: 57px;
-bottom: 0;
-z-index: 999999;
-position: fixed;
-}
+
 
 
  /** LIGHTBOX MARKUP **/
@@ -245,9 +246,9 @@ position: fixed;
 
 
 .hovereffect .hoverIcon{
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   opacity: 0;
@@ -10972,10 +10973,6 @@ textarea.form-control-lg {
     padding-left: 0!important;
 }
 
-.whiteBlock{
-  width: 100%;
-}
-
 .logo{
   text-align: left;
 }
@@ -10988,6 +10985,18 @@ textarea.form-control-lg {
   padding-left: 30px;
   padding-right: 30px;
 
+}
+
+.marginPropos {
+  margin-top: 0vh!important;
+}
+
+.txtPropos{
+  padding:7vh;
+}
+
+.displayPropos{
+  display: none;
 }
 
 }
