@@ -7,12 +7,21 @@ body {
   padding-bottom: 3rem;*/
   color: #ffffff;
 }
+.gradient{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  z-index:99999999999999999;
+}
 h1{
   color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    text-transform: capitalize;
+    font-size: 30px;
+    text-transform: uppercase;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: lighter;
+    line-height: 2;
 }
 .lineWhite{
   width: 40%;
@@ -21,7 +30,7 @@ h1{
     margin: 0 auto;
 }
 .logoCarousel{
-  width:15%;
+  width:10%;
   margin-bottom:30px;
 }
 .btn{
@@ -97,6 +106,8 @@ label[for=toogle]{
 .carousel {
   margin-bottom: 4rem;
   position: inherit;
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -185,10 +196,13 @@ label[for=toogle]{
     left:30%;
   }
   .logoCarousel{
-    width:40%;
+    width:30%;
   }
   h1{
-    font-size:35px;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .lineWhite {
     width: 88%;
