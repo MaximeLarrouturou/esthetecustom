@@ -331,6 +331,7 @@ margin-top: 5px;
 
 .mySlides {
   display: none;
+  height:89vh;
 }
 
 .cursor {
