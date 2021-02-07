@@ -82,6 +82,15 @@
   margin-top: 12vh!important;
 }
 
+.mySlides img{
+  width: 100%;
+}
+
+.mySlides .heightSlides{
+  height: 89vh;
+  width: auto!important;
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
       font-size: 3.5rem;
@@ -315,6 +324,7 @@ margin-top: 5px;
 /* The Close Button */
 .close {
   color: white;
+  z-index: 2;
   position: absolute;
   top: 10px;
   right: 25px;
@@ -11081,6 +11091,29 @@ textarea.form-control-lg {
 .displayPropos{
   display: none;
 }
+.mySlides{
+  top: -50px;
+  left: -570px;
+  position: absolute;
+}
 
+.mySlides img{
+  width: 152vh!important;
+  left: 260px;
+  position: absolute;
+}
+
+.heightSlides{
+  height:100vh;
+  left: 570px!important;
+}
+
+.prev, .next {
+  top: 40vh;
+  z-index: 7;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 }
 /*# sourceMappingURL=bootstrap.css.map */
