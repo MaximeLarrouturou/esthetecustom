@@ -15,18 +15,17 @@
     <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/dist/css/animate.css" />
-
 </head>
 
 <body class="text-center">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
             aria-hidden="true"></i></button>
     <main>
-        <!--SITE WEB-->
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light mt-md-3 mb-md-5">
                 <div class="container-fluid px-md-4">
-                    <a class="logo" href="./galerie.html"><img src="./assets/img/logo-Esthete-black.png" class="float-md-start mb-0 w-60 imgResponsive" /></a>
+                    <a class="logo" href="./galerie.html"><img src="./assets/img/logo-Esthete-black.png"
+                            class="float-md-start mb-0 w-60 imgResponsive" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -49,836 +48,750 @@
                     </div>
                 </div>
             </nav>
-            <!-- Gallerie -->
+
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#1">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-01.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="1">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-01.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(1)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-01.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#2">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-02.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="2">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-02.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(2)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-02.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#3">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-04.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="3">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-04.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(3)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-03.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#4">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-03.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="4">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-03.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(4)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-04.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#5">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-06.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="5">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-06.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(5)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-05.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#6">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-05.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="6">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-05.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(6)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-06.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#7">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-07.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="7">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-07.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(7)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-07.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#8">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-08.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="8">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-08.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(8)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-08.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#10">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-09.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="10">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-09.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(9)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-09.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#11">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-11.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="11">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-11.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(10)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-10.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#12">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-10.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="12">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-10.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(11)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-11.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#9">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-12.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="9">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-12.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(12)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-12.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#13">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-13.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="13">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-13.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(13)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-13.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#14">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-14.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="14">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-14.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(14)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-14.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#15">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-30.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="15">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-30.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(15)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-15.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#16">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-16.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="16">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-16.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(16)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-16.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#17">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-17.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="17">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-17.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(17)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-17.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#18">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-18.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="18">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-18.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(18)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-18.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#19">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-19.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="19">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-19.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(19)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-19.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#20">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-20.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="20">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-20.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(20)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-20.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#22">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-22.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="22">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-22.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(21)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-21.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#23">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-23.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="23">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-23.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(22)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-22.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#24">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-24.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="24">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-24.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(23)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-23.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#21">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-21.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="21">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-21.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(24)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-24.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#25">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-25.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="25">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-25.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(25)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-25.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#26">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-26.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="26">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-26.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(26)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-26.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#27">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-31.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="27">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-31.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(27)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-27.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#28">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-28.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="28">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-28.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(28)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-28.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#29">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-29.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="29">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-29.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(29)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-29.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#30">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-27.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="30">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-27.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(35)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-30.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#31">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-32.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="31">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-32.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(31)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-35.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#32">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-33.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="32">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-33.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(33)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-42.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#34">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-34.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="34">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-34.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(33)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-33.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#35">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-36.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="35">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-36.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(34)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-34.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#36">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-37.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="36">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-37.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(35)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-31.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#33">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-38.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="33">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-38.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(36)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-36.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#37">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-35.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="37">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-35.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(37)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-37.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#38">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-42.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="38">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-42.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(38)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-38.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#39">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-40.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="39">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-40.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(39)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-39.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#40">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-41.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="40">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-41.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(40)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-40.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#41">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-39.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="41">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-39.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(41)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-41.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#42">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-43.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="42">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-43.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(42)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-32.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#43">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-25.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="43">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-25.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(43)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-43.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#44">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-26.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="44">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-26.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(44)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-44.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#46">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-45.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="46">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-45.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(45)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-45.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#47">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-46.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="47">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-46.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(46)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-46.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#48">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-44.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="48">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-44.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(47)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-47.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#45">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-47.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="45">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-47.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(48)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-48.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 1 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#49">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-48.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="49">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-48.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(49)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-49.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#50">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-49.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="50">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-49.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(50)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-50.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 3 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#51">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-52.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="51">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-52.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(51)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-51.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(52)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-52.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(53)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-54.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 3 colonne -->
+            <!-- 2 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#52">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-51.jpeg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="52">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-51.jpeg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"
+                    onclick="openModal();currentSlide(54)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-55.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#53">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-50.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="53">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-50.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
-                </div>
-                <div class="hovereffect col-sm-4 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <a href="#54">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-56.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="54">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-56.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s"
+                    onclick="openModal();currentSlide(55)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-56.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
+            <!-- 2 colonne -->
+            <!-- 1 colonne -->
             <div class="row">
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#55">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-54.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="55">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-54.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
-                </div>
-                <div class="hovereffect col-sm-6 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <a href="#56">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-55.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="56">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-55.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s"
+                    onclick="openModal();currentSlide(56)">
+                    <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-53.jpg" />
+                    <div class="overlay">
+                        <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="hovereffect col-sm-12 p-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <a href="#57">
-                        <img class="img-fluid p-2" src="./assets/img/website/Esthete-Custom-53.jpg" />
-                        <div class="overlay">
-                            <i class="fa fa-search-plus hoverIcon" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="57">
-                        <span style="background-image: url('./assets/img/website/Esthete-Custom-53.jpg')">
-                            <i class="fa fa-close faStyle"></i>
-                        </span>
-                    </a>
+            <!-- 1 colonne -->
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-01.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-02.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-03.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-04.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-05.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-06.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-07.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-08.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-09.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-10.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-11.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-12.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-13.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-14.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-15.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-16.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-17.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-18.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-19.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-20.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-21.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-22.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-23.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-24.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-25.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-26.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-27.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-28.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-29.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-30.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-35.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-42.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-33.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-34.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-31.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-36.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-37.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-38.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-39.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-40.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-41.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-32.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-43.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-44.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-45.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-46.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-47.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-48.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-49.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-50.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-51.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-52.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-54.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-55.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-56.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="./assets/img/website/Esthete-Custom-53.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                 </div>
             </div>
-            <!-- Gallerie -->
         </div>
-
-        <!--SITE WEB-->
     </main>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="./assets/dist/js/galerie.js"> </script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/dist/js/wow.js"> </script>
-
-
 </body>
 
 </html>
