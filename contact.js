@@ -28,7 +28,7 @@ $(function () {
                     var messageText = data.message;
 
                     // let's compose Bootstrap alert box HTML
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button class="notifClose" type="button" data-dismiss="alert" aria-hidden="true"><i class="fa fa-close"aria-hidden="true"></i></button>' + messageText + '</div>';
                     
                     // If we have messageAlert and messageText
                     if (messageAlert && messageText) {

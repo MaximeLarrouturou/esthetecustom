@@ -12,14 +12,14 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 
 // an email address that will be in the From field of the email.
 $fromEmail = 'larrouturoumaxime@gmail.com';
-$fromName = 'Demo contact form';
+$fromName = 'Esthete Custom';
 
 // an email address that will receive the email with the output of the form
 $sendToEmail = 'larrouturoumaxime@gmail.com';
-$sendToName = 'Demo contact form';
+$sendToName = 'Esthete Custom';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Nouveau message du formulaire de contact';
 
 // smtp credentials and server
 
@@ -32,10 +32,10 @@ $smtpPassword = 'Codmax7592220!';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Message envoyé avec succès. Merci, je vous répondrai bientôt!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer plus tard';
 
 /*
 *  LET'S DO THE SENDING
@@ -46,10 +46,10 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 try {
     if (count($_POST) == 0) {
-        throw new \Exception('Form is empty');
+        throw new \Exception('Le formulaire est vide');
     }
     
-    $emailTextHtml = "<h1>You have a new message from your contact form</h1><hr>";
+    $emailTextHtml = "<h1>Vous avez un nouveau message depuis votre formulaire de contact</h1><hr>";
     $emailTextHtml .= "<table>";
     
     foreach ($_POST as $key => $value) {
@@ -57,9 +57,7 @@ try {
         if (isset($fields[$key])) {
             $emailTextHtml .= "<tr><th>$fields[$key]</th><td>$value</td></tr>";
         }
-    }
-    $emailTextHtml .= "</table><hr>";
-    $emailTextHtml .= "<p>Have a nice day,<br>Best,<br>Ondrej</p>";
+    };
     
     $mail = new PHPMailer;
     
@@ -74,7 +72,7 @@ try {
     $mail->msgHTML($emailTextHtml); // this will also create a plain-text version of the HTML email, very handy
     
     
-    $mail->isSMTP();
+    //$mail->isSMTP();
     
     //Enable SMTP debugging
     // 0 = off (for production use)
@@ -105,7 +103,7 @@ try {
     $mail->Password = $smtpPassword;
     
     if (!$mail->send()) {
-        throw new \Exception('I could not send the email.' . $mail->ErrorInfo);
+        throw new \Exception('Je n\'ai pas pu envoyer l\'e-mail.' . $mail->ErrorInfo);
     }
     
     $responseArray = array('type' => 'success', 'message' => $okMessage);
