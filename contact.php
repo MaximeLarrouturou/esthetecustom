@@ -19,7 +19,7 @@ $sendToEmail = 'larrouturoumaxime@gmail.com';
 $sendToName = 'Esthete Custom';
 
 // subject of the email
-$subject = 'Nouvelle demande de devis';
+$subject = 'Demande site internet Esthete Custom';
 
 // smtp credentials and server
 
@@ -49,7 +49,7 @@ try {
         throw new \Exception('Le formulaire est vide');
     }
     
-    $emailTextHtml = "<h1>Nouvelle demande de devis</h1><hr>";
+    $emailTextHtml = "<h1>Demande site internet Esthete Custom</h1><hr>";
     $emailTextHtml .= "<table>";
     
     foreach ($_POST as $key => $value) {
