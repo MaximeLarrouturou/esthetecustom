@@ -19,7 +19,7 @@ $sendToEmail = 'larrouturoumaxime@gmail.com';
 $sendToName = 'Esthete Custom';
 
 // subject of the email
-$subject = 'Nouveau message du formulaire de contact';
+$subject = 'Nouvelle demande de devis';
 
 // smtp credentials and server
 
@@ -29,7 +29,7 @@ $smtpPassword = 'Codmax7592220!';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
+$fields = array('name' => 'Nom', 'surname' => 'Prénom', 'phone' => 'Téléphone', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Message envoyé avec succès. Merci, je vous répondrai bientôt!';
@@ -49,7 +49,7 @@ try {
         throw new \Exception('Le formulaire est vide');
     }
     
-    $emailTextHtml = "<h1>Vous avez un nouveau message depuis votre formulaire de contact</h1><hr>";
+    $emailTextHtml = "<h1>Nouvelle demande de devis</h1><hr>";
     $emailTextHtml .= "<table>";
     
     foreach ($_POST as $key => $value) {
