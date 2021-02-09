@@ -117,7 +117,15 @@ color: #ff5050;
 margin-top: 5px;
 }
 
+.heightGalerie{
+  height:60vh;
+}
 
+.navbar {
+padding-top: 0!important;
+  padding-bottom: 0!important; 
+  padding: 30px!important;
+}
 
  /** LIGHTBOX MARKUP **/
  .lightbox {
@@ -300,9 +308,9 @@ margin-top: 5px;
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 50px;
   left: 0;
   top: 0;
+  padding-top: 50px;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -312,12 +320,12 @@ margin-top: 5px;
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #000000;
+  background-color: transparent!important;
   border:none!important;
-  border: none;
+  border-radius: 0!important;
   margin: auto;
   padding: 0;
-  width: 90%;
+  width:80%!important;
   max-width: 1200px;
 }
 
@@ -11115,8 +11123,8 @@ textarea.form-control-lg {
 }
 
 .heightSlides{
-  height:100vh;
-  left: 570px!important;
+  height:101vh!important;
+  left: 533px!important;
 }
 
 .prev, .next {
@@ -11125,6 +11133,19 @@ textarea.form-control-lg {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
+}
+
+.heightGalerie{
+  height:auto;
+}
+
+.heightGuitare{
+  left: 114px!important;
+  top: 80px;
+}
+
+.modal-content {
+  width:100%!important;
 }
 }
 /*# sourceMappingURL=bootstrap.css.map */
