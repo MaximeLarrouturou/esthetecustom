@@ -11,11 +11,11 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'larrouturoumaxime@gmail.com';
+$fromEmail = 'esthete.custom@gmail.com';
 $fromName = 'Esthete Custom';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'larrouturoumaxime@gmail.com';
+$sendToEmail = 'esthete.custom@gmail.com';
 $sendToName = 'Esthete Custom';
 
 // subject of the email
@@ -24,8 +24,8 @@ $subject = 'Demande site internet Esthete Custom';
 // smtp credentials and server
 
 $smtpHost = 'smtp.gmail.com';
-$smtpUsername = 'larrouturoumaxime@gmail.com';
-$smtpPassword = 'Codmax7592220!';
+$smtpUsername = 'esthete.custom@gmail.com';
+$smtpPassword = 'Valentino46!';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
