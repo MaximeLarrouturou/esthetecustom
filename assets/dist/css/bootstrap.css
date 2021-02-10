@@ -91,6 +91,10 @@
   width: auto!important;
 }
 
+.mobile{
+  display: none;
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
       font-size: 3.5rem;
@@ -2689,7 +2693,6 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  vertical-align: middle;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -6770,10 +6773,6 @@ textarea.form-control-lg {
 
 .mw-100 {
   max-width: 100% !important;
-}
-
-.vw-77 {
-  width: 77.5vw !important;
 }
 
 .vw-80 {
@@ -11079,19 +11078,30 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
 @media (max-width: 500px) {
-  .imgResponsive{
-    width: 40%!important;
+  .desktop{
+    display: none;
   }
 
-  .navbar-nav {
-    position: relative;
-    padding-left: 0!important;
-}
+  .mobile{
+    display: inline-flex;
+    width: 6vh!important;
+  }
+  
 
-.logo{
-  text-align: left;
-}
+  .vw-80{
+    width: 95vw!important;
+  }
+
+  .nav{
+    padding-top: 37px;
+    justify-content: center;
+  }
+
+  .pe-0{
+    padding-right: 14px!important;
+  }
 
 .faStyle {
     right: 25px;
@@ -11100,7 +11110,6 @@ textarea.form-control-lg {
 .contact{
   padding-left: 30px;
   padding-right: 30px;
-
 }
 
 .marginPropos {
