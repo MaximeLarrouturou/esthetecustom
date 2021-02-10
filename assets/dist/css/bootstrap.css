@@ -556,11 +556,12 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #5a6066;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #212529;
+  font-weight:400;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -6769,6 +6770,10 @@ textarea.form-control-lg {
 
 .mw-100 {
   max-width: 100% !important;
+}
+
+.vw-77 {
+  width: 77.5vw !important;
 }
 
 .vw-80 {
