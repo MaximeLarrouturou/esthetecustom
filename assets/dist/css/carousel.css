@@ -159,4 +159,8 @@ button[for=toogle]{
 	.lineWhite {
 		width: 88%;
 	}
+
+	.pt-19 {
+		padding-top: 10rem !important;
+	  }
 }
